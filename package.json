@@ -1,5 +1,5 @@
 {
-  "name": "higher-order-components-explained",
+  "name": "y",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +11,7 @@
     "react-scripts": "3.0.1"
   },
   "scripts": {
-    "start": "PORT=4000 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -30,5 +30,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "A small project that demonstrates how higher order components work at a basic level",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZhangMYihua/higher-order-components-explained.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZhangMYihua/higher-order-components-explained/issues"
+  },
+  "homepage": "https://github.com/ZhangMYihua/higher-order-components-explained#readme"
 }
