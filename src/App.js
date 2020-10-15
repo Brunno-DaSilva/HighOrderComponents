@@ -11,13 +11,9 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => {
-        response.json();
-      })
-      .then((data) => {
-        this.setState({ posts: data });
-      });
+    fetch("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => response.json())
+      .then((data) => this.setState({ posts: data.slice(0, 12) }));
   }
 
   render() {
@@ -28,10 +24,13 @@ class App extends Component {
 
         <div>
           <h2>Posts: </h2>
-          {this.props.data.map((post) => {
-            <div className="post" key={post.id}>
-              <h2>{post.title}</h2>
-            </div>;
+          {this.state.posts.map((post) => {
+            return (
+              <div className="post" key={post.id}>
+                <h2>{post.title}</h2>
+                <p>{post.body}</p>
+              </div>
+            );
           })}
         </div>
       </div>
